@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      # Install dependencies using a clean install
+      - name: Install dependencies
+        run: npm ci
+
+      # Run ESLint to check code quality
+      - name: Run ESLint
+        run: npm run lint
+
+      # Run Vitest to execute your tests
+      - name: Run Tests
+        run: npm run test
+
+      # Build the project with Vite
+      - name: Build Project
+        run: npm run build
