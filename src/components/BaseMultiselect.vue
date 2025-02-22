@@ -4,11 +4,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "BaseMultiselect",
-};
-</script>
+<script setup></script>
 
 <style scoped>
 .base-multiselect {
