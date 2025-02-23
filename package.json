@@ -6,11 +6,11 @@
     "dev": "vite",
     "build": "vite build",
     "test": "vitest",
-    "lint": "eslint ./src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint ./src --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alper Guven",
   "license": "ISC",
   "description": "",
   "dependencies": {
