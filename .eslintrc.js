@@ -14,11 +14,19 @@ module.exports = {
     ecmaVersion: "latest",
   },
   ignorePatterns: ["/public/game/*.js"],
+  files: ["./src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}"],
   rules: {
     "import/order": [
       "error",
       {
-        groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
         pathGroups: [
           {
             pattern: "vue",
