@@ -15,6 +15,7 @@ module.exports = {
   },
   ignorePatterns: ["/public/game/*.js"],
   files: ["./src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}"],
+  ignorePatterns: ["node_modules/", "dist/"],
   rules: {
     "import/order": [
       "error",

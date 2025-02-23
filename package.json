@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "test": "vitest",
-    "lint": "eslint ./src --fix --ignore-path .gitignore",
+    "lint": "eslint ./src --fix .gitignore",
     "format": "prettier --write src/"
   },
   "keywords": [],
