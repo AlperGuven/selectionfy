@@ -1,5 +1,5 @@
 // directives
-import clickOutside from "@/directives/click-outside.js";
+import clickOutside from "./composables/click-outside.js";
 
 import { createApp } from "vue";
 import App from "./App.vue";
