@@ -1,11 +1,11 @@
 // directives
-import clickOutside from "./composables/click-outside.js";
+import clickOutside from './directives/click-outside.js'
 
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.directive("click-outside", clickOutside);
+app.directive('click-outside', clickOutside)
 
-app.mount("#app");
+app.mount('#app')
